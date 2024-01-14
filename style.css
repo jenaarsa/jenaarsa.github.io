@@ -1,0 +1,63 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+
+  /* Con las siguientes 5 lineas de codigo la imagen de fondo siempre estara centrada cuando manipulemos el tamaño de la ventana */
+  background: url(header.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* El codigo de arriba es para la configuracion del fondo centrado */
+
+}
+
+h1{
+  font-size: 3rem;
+  color: #e2dbdb;
+}
+hr {
+  margin: 20px auto;
+  color: #F05F44;
+  border: 3px solid #F05F44;
+  /* Para establecer el ancho maximo */
+  max-width: 65px;
+  
+  opacity: 1;  
+}
+.btn{
+  font-weight: 700px;
+  /* Para redondear el boton */
+  border-radius: 300px;
+  /* Para convertir el texto en mayusculas */
+  text-transform: uppercase;
+}
+
+/* Para llamar unicamnete a las clases de boton de primary */
+.btn-primary{
+  /* Para añadirle un color al boton */
+  background-color: #F05F44;
+
+  /* Para que el borde no se vea azul(como lo predeterminado) le asignamos uno */
+  border-color: #F05F44 ;
+}
+
+.btn-primary:hover{
+  /* Para que cuando se ponga el mouse encima se vea un naranja mas oscuro, no como el azul que aparece como predeterminado */
+  background-color: #ee4b08;
+  /* Aca le damos ese mismo color al borde para que no se vea azul como lo hace predeterminadamente */
+  border-color:#ee4b08;
+  /* Para que cuando se pase el mouse encima, se vea mas grande el boton ya que su borde va a ser mas grueso */
+  border-width: 4px;
+}
+
+.row {
+  display: flex;
+   flex-direction: column; 
+   align-items: center; 
+  justify-content: space-evenly; /* Espaciado alrededor de los elementos */
+  /* establecer la altura de un elemento al 100% de la altura del viewport (ventana gráfica del navegador), es decir, que ocupe toda la pantalla el contenedor */
+  height: 100vh; 
+}
